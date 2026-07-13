@@ -1,0 +1,39 @@
+/* ─── Gitify Brand ─── */
+:root {
+  --mint: #A6F0D3;
+  --mint-dark: #2D6E5B;
+  --red: #FF2302;
+  --bg: #000B09;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --border: rgba(255, 255, 255, 0.07);
+}
+
+/* ─── Global overrides ─── */
+.slidev-layout {
+  background-color: var(--bg);
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  color: white;
+}
+
+/* Force background on all slide wrappers */
+.slidev-page,
+.slidev-slide,
+#slideshow {
+  background-color: var(--bg) !important;
+}
+
+/* Monospace helper */
+.mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* Accent helpers */
+.text-mint { color: var(--mint); }
+.text-red  { color: var(--red); }
+
+/* Card style */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
