@@ -10,10 +10,18 @@ fonts:
 css: styles/style.css
 src: ./pages/01-slide.md
 ---
-
 ---
 src: ./pages/02-slide.md
 ---
 ---
 src: ./pages/03-slide.md
+---
+---
+src: ./pages/04-slide.md
+---
+---
+src: ./pages/05-slide.md
+---
+---
+src: ./pages/06-slide.md
 ---
