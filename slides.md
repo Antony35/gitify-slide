@@ -34,3 +34,15 @@ src: ./pages/08-slide.md
 ---
 src: ./pages/09-slide.md
 ---
+---
+src: ./pages/10-slide.md
+---
+---
+src: ./pages/11-slide.md
+---
+---
+src: ./pages/12-slide.md
+---
+---
+src: ./pages/13-slide.md
+---
