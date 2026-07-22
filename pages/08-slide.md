@@ -6,13 +6,18 @@
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);">Gestion de projet</p>
+  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
+    Gestion de projet
+  </p>
 
   <!-- Timeline horizontale -->
+  <!-- On retire l'animation de groupe pour animer étape par étape -->
   <div class="flex items-start gap-0" style="width: 820px;">
 
   <!-- Étape 1 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(166,240,211,0.12); border: 1px solid rgba(166,240,211,0.3); color: #A6F0D3;">1</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Initialisation</p>
@@ -20,7 +25,8 @@
   </div>
   
   <!-- Étape 2 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 450 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(166,240,211,0.12); border: 1px solid rgba(166,240,211,0.3); color: #A6F0D3;">2</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Maquettes</p>
@@ -28,7 +34,8 @@
   </div>
   
   <!-- Étape 3 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 600 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(166,240,211,0.12); border: 1px solid rgba(166,240,211,0.3); color: #A6F0D3;">3</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Backend</p>
@@ -36,7 +43,8 @@
   </div>
   
   <!-- Étape 4 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 750 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(166,240,211,0.12); border: 1px solid rgba(166,240,211,0.3); color: #A6F0D3;">4</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Frontend</p>
@@ -44,7 +52,8 @@
   </div>
   
   <!-- Étape 5 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 900 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(166,240,211,0.12); border: 1px solid rgba(166,240,211,0.3); color: #A6F0D3;">5</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Déploiement</p>
@@ -52,7 +61,8 @@
   </div>
   
   <!-- Étape 6 -->
-  <div class="flex flex-col items-center gap-2 flex-1">
+  <div class="flex flex-col items-center gap-2 flex-1"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 1050 } } }">
     <div class="w-8 h-8 rounded-full flex items-center justify-center mono text-xs font-bold" style="background: rgba(255,35,2,0.12); border: 1px solid rgba(255,35,2,0.3); color: #FF2302;">6</div>
     <div style="height: 2px; width: 100%; background: rgba(255,255,255,0.08);"></div>
     <p class="text-xs text-center font-semibold text-white px-1">Dossier & Slides</p>
@@ -63,15 +73,18 @@
 
   <!-- Outils -->
   <div class="flex gap-4">
-    <div class="card px-5 py-2 flex items-center gap-2">
+    <div class="card px-5 py-2 flex items-center gap-2"
+         v-motion="{ initial: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 800, delay: 1250, type: 'spring', stiffness: 200 } } }">
       <span class="text-sm">📋</span>
       <p class="mono text-xs" style="color: rgba(255,255,255,0.5);">Notion</p>
     </div>
-    <div class="card px-5 py-2 flex items-center gap-2">
+    <div class="card px-5 py-2 flex items-center gap-2"
+         v-motion="{ initial: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 800, delay: 1400, type: 'spring', stiffness: 200 } } }">
       <span class="text-sm">🗂️</span>
       <p class="mono text-xs" style="color: rgba(255,255,255,0.5);">GitHub Projects</p>
     </div>
-    <div class="card px-5 py-2 flex items-center gap-2">
+    <div class="card px-5 py-2 flex items-center gap-2"
+         v-motion="{ initial: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 800, delay: 1550, type: 'spring', stiffness: 200 } } }">
       <span class="text-sm">✅</span>
       <p class="mono text-xs" style="color: rgba(255,255,255,0.5);">MoSCoW</p>
     </div>

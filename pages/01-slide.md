@@ -1,3 +1,14 @@
+<style>
+.animate-blinkCursor {
+    animation: blinkCursor 1.5s step-end infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+</style>
+
 <!--
 ╔══════════════════════════════════════════════╗
 ║             SLIDE 1 — Couverture             ║
@@ -7,31 +18,36 @@
 <div class="flex flex-col items-center justify-center gap-7 h-full">
 
   <!-- Logo + titre -->
-  <div class="flex items-center gap-4">
+  <div class="flex items-center gap-4" 
+       v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
     <div class="w-14 h-14 rounded-xl flex items-center justify-center mono font-bold text-xl"
          style="border: 2px solid #A6F0D3; color: #A6F0D3;">
       &gt;_
     </div>
     <span class="mono font-black text-6xl tracking-tight text-white">
-      Gitify<span style="color: #FF2302;">_</span>
+      Gitify<span class="animate-blinkCursor" style="color: #FF2302;">_</span>
     </span>
   </div>
 
   <!-- Tagline -->
-  <p class="mono text-2xl" style="color: rgba(255,255,255,0.45);">
+  <p class="mono text-2xl" style="color: rgba(255,255,255,0.45);" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     Code, Collab, <span style="color: #A6F0D3;">Conquer.</span>
   </p>
 
   <!-- Séparateur -->
-  <div class="w-16 h-px" style="background: rgba(255,255,255,0.1);"></div>
+  <div class="w-16 h-px" style="background: rgba(255,255,255,0.1);" 
+       v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 500 } } }"></div>
 
   <!-- Équipe -->
-  <p class="tracking-widest text-xs uppercase" style="color: rgba(255,255,255,0.25); letter-spacing: 0.3em;">
+  <p class="tracking-widest text-xs uppercase" style="color: rgba(255,255,255,0.25); letter-spacing: 0.3em;" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 700 } } }">
     Josué &nbsp;·&nbsp; Richard &nbsp;·&nbsp; Théo &nbsp;·&nbsp; Antony &nbsp;·&nbsp; Nicolas
   </p>
 
   <!-- Contexte -->
-  <p class="text-xs" style="color: rgba(255,255,255,0.15);">
+  <p class="text-xs" style="color: rgba(255,255,255,0.15);" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 900 } } }">
     Projet annuel 2025 / 2026 &nbsp;·&nbsp; ESGI
   </p>
 
