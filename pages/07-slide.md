@@ -1,4 +1,3 @@
-
 <!--
 ╔══════════════════════════════════════════════╗
 ║  SLIDE 7 — Architecture & Stack              ║
@@ -7,46 +6,60 @@
 
 <div class="flex flex-col items-center justify-center gap-6 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);">Architecture & Stack</p>
+  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
+    Architecture & Stack
+  </p>
 
   <!-- Diagramme en couches -->
+  <!-- On retire l'animation globale pour animer chaque bloc -->
   <div class="flex flex-col items-center gap-0" style="width: 580px;">
 
   <!-- Cloudflare -->
-  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(249,130,0,0.08); border: 1px solid rgba(249,130,0,0.3);">
+  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(249,130,0,0.08); border: 1px solid rgba(249,130,0,0.3);"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     <p class="mono text-xs font-bold tracking-widest uppercase mb-1" style="color: rgba(249,130,0,0.7);">Cloudflare</p>
     <p class="text-xs" style="color: rgba(255,255,255,0.4);">WAF · CDN · Protection DDoS</p>
   </div>
   
-  <div class="flex flex-col items-center py-1" style="color: rgba(255,255,255,0.15);">
+  <!-- Flèche 1 -->
+  <div class="flex flex-col items-center py-1" style="color: rgba(255,255,255,0.15);"
+    v-motion="{ initial: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 500, delay: 450 } } }">
     <div style="width:1px; height:14px; background: rgba(255,255,255,0.12);"></div>
     <span style="font-size:9px;">▼</span>
   </div>
   
   <!-- Frontend -->
-  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);">
+  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 600 } } }">
     <p class="mono text-xs font-bold tracking-widest uppercase mb-1" style="color: rgba(166,240,211,0.6);">Frontend</p>
     <p class="text-xs" style="color: rgba(255,255,255,0.5);">Nuxt 4 · Vue 3 · Pinia · @nuxt/ui · Tailwind CSS v4</p>
   </div>
   
-  <div class="flex flex-col items-center py-1">
+  <!-- Flèche 2 -->
+  <div class="flex flex-col items-center py-1"
+    v-motion="{ initial: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 500, delay: 750 } } }">
     <div style="width:1px; height:14px; background: rgba(255,255,255,0.12);"></div>
     <span style="font-size:9px; color: rgba(255,255,255,0.15);">▼</span>
   </div>
   
   <!-- Backend -->
-  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);">
+  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 900 } } }">
     <p class="mono text-xs font-bold tracking-widest uppercase mb-1" style="color: rgba(166,240,211,0.6);">Backend</p>
     <p class="text-xs" style="color: rgba(255,255,255,0.5);">AdonisJS 7 · TypeScript · Node.js 24 · Tuyau · VineJS</p>
   </div>
   
-  <div class="flex flex-col items-center py-1">
+  <!-- Flèche 3 -->
+  <div class="flex flex-col items-center py-1"
+    v-motion="{ initial: { opacity: 0 }, visible: { opacity: 1, transition: { duration: 500, delay: 1050 } } }">
    <div style="width:1px; height:14px; background: rgba(255,255,255,0.12);"></div>
    <span style="font-size:9px; color: rgba(255,255,255,0.15);">▼</span>
   </div>
   
   <!-- Base de données -->
-  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);">
+  <div class="w-full px-6 py-0 text-center rounded-xl" style="background: rgba(166,240,211,0.06); border: 1px solid rgba(166,240,211,0.2);"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 1200 } } }">
     <p class="mono text-xs font-bold tracking-widest uppercase mb-1" style="color: rgba(166,240,211,0.6);">Base de données</p>
     <p class="text-xs" style="color: rgba(255,255,255,0.5);">PostgreSQL 15 · Lucid ORM · ULID</p>
   </div>
@@ -55,10 +68,15 @@
 
   <!-- Pastilles infra + outillage -->
   <div class="flex gap-4 mt-2">
-    <div class="card px-4 py-2 text-center">
+    <!-- Pastille Infra -->
+    <div class="card px-4 py-2 text-center"
+         v-motion="{ initial: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 800, delay: 1400, type: 'spring', stiffness: 200 } } }">
       <p class="mono text-xs" style="color: rgba(255,255,255,0.35);">Hetzner VPS · Docker Compose · Certbot SSL</p>
     </div>
-    <div class="card px-4 py-2 text-center">
+
+  <!-- Pastille Outillage -->
+  <div class="card px-4 py-2 text-center"
+         v-motion="{ initial: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1, transition: { duration: 800, delay: 1550, type: 'spring', stiffness: 200 } } }">
       <p class="mono text-xs" style="color: rgba(255,255,255,0.35);">Turborepo · GitHub Actions · oxlint</p>
     </div>
   </div>

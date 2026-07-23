@@ -6,11 +6,13 @@
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);">Les fonctionnalités</p>
+  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">Les fonctionnalités</p>
 
   <div class="grid grid-cols-3 gap-4" style="width: 720px;">
 
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     <span class="text-xl mt-0.5">🔑</span>
     <div>
       <p class="font-semibold text-sm text-white">GitHub OAuth</p>
@@ -18,7 +20,8 @@
     </div>
   </div>
   
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 500 } } }">
     <span class="text-xl mt-0.5">⚙️</span>
     <div>
       <p class="font-semibold text-sm text-white">Préférences</p>
@@ -26,7 +29,8 @@
     </div>
   </div>
   
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 600 } } }">
     <span class="text-xl mt-0.5">✨</span>
     <div>
       <p class="font-semibold text-sm text-white">Feed personnalisé</p>
@@ -34,7 +38,8 @@
     </div>
   </div>
   
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 800 } } }">
     <span class="text-xl mt-0.5">🤍</span>
     <div>
       <p class="font-semibold text-sm text-white">Favoris</p>
@@ -42,7 +47,8 @@
     </div>
   </div>
   
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 1000 } } }">
     <span class="text-xl mt-0.5">🌐</span>
     <div>
       <p class="font-semibold text-sm text-white">Landing publique</p>
@@ -50,7 +56,8 @@
     </div>
   </div>
   
-  <div class="card flex items-start gap-3 p-4">
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 1200 } } }">
     <span class="text-xl mt-0.5">📄</span>
     <div>
       <p class="font-semibold text-sm text-white">API documentée</p>

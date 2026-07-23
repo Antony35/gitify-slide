@@ -6,12 +6,17 @@
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);">Ce qu'on a appris</p>
+  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
+    Ce qu'on a appris
+  </p>
 
+  <!-- On retire l'animation de groupe pour animer carte par carte -->
   <div class="flex flex-col gap-4" style="width: 640px;">
 
   <!-- Auth -->
-  <div class="card flex items-start gap-4 px-6 py-4">
+  <div class="card flex items-start gap-4 px-6 py-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     <span class="text-2xl mt-0.5">🔐</span>
     <div>
       <p class="font-semibold text-sm text-white">Authentification</p>
@@ -23,7 +28,8 @@
   </div>
   
   <!-- Docker permissions -->
-  <div class="card flex items-start gap-4 px-6 py-4">
+  <div class="card flex items-start gap-4 px-6 py-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 450 } } }">
     <span class="text-2xl mt-0.5">🐳</span>
     <div>
       <p class="font-semibold text-sm text-white">Permissions Docker</p>
@@ -35,7 +41,8 @@
   </div>
   
   <!-- Organisation -->
-  <div class="card flex items-start gap-4 px-6 py-4">
+  <div class="card flex items-start gap-4 px-6 py-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 600 } } }">
     <span class="text-2xl mt-0.5">🗣️</span>
     <div>
       <p class="font-semibold text-sm text-white">Organisation d'équipe</p>
