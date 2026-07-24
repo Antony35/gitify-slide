@@ -14,7 +14,7 @@ style="max-height: 72%; max-width: 90%; box-shadow: 0 24px 40px rgba(0,0,0,0.6);
 v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }"
 />
 
-  <p class="mono text-lg" style="color: #A6F0D3;"
+  <p class="mono text-lg text-mint"
     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
     La première question que GitHub ne pose jamais.
   </p>

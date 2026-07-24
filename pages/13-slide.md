@@ -1,14 +1,3 @@
-<style>
-.animate-blinkCursor {
-    animation: blinkCursor 1.5s step-end infinite;
-}
-
-@keyframes blinkCursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-</style>
-
 <!--
 ╔══════════════════════════════════════════════╗
 ║  SLIDE 13 — Merci.                           ║
@@ -20,12 +9,12 @@
   <!-- Logo -->
   <div class="flex items-center gap-4" 
     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
-    <div class="w-12 h-12 rounded-xl flex items-center justify-center mono font-bold text-lg"
-         style="border: 2px solid #A6F0D3; color: #A6F0D3;">
+    <div class="w-12 h-12 rounded-xl flex items-center justify-center mono font-bold text-lg text-mint"
+         style="border: 2px solid #A6F0D3">
       &gt;_
     </div>
     <span class="mono font-black text-5xl tracking-tight text-white">
-      Gitify<span class="animate-blinkCursor" style="color: #FF2302;">_</span>
+      Gitify<span class="animate-blinkCursor text-red">_</span>
     </span>
   </div>
 
@@ -39,12 +28,12 @@
     ></div>
 
   <!-- Questions -->
-  <p class="mono text-sm" style="color: rgba(255,255,255,0.3);" 
+  <p class="mono text-sm dim-30" 
     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 800 } } }"
   >Place aux questions.</p>
 
   <!-- Équipe -->
-  <p class="text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.2); letter-spacing: 0.3em;"
+  <p class="text-xs tracking-widest uppercase dim-20" style="letter-spacing: 0.3em"
     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 1000 } } }">
     Antony &nbsp;·&nbsp; Josué &nbsp;·&nbsp; Richard &nbsp;·&nbsp; Nicolas &nbsp;·&nbsp; Théo
   </p>

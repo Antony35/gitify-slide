@@ -28,12 +28,36 @@
 }
 
 /* Accent helpers */
-.text-mint { color: var(--mint); }
-.text-red  { color: var(--red); }
+.text-mint    { color: var(--mint); }
+.text-mint-60 { color: rgba(166, 240, 211, 0.6); }
+.text-red     { color: var(--red); }
+.text-orange  { color: rgba(249, 130, 0, 0.7); }
+
+/* White text dimmed by opacity level (dim-XX = opacity 0.XX) */
+.dim-80 { color: rgba(255, 255, 255, 0.8); }
+.dim-65 { color: rgba(255, 255, 255, 0.65); }
+.dim-50 { color: rgba(255, 255, 255, 0.5); }
+.dim-45 { color: rgba(255, 255, 255, 0.45); }
+.dim-40 { color: rgba(255, 255, 255, 0.4); }
+.dim-35 { color: rgba(255, 255, 255, 0.35); }
+.dim-30 { color: rgba(255, 255, 255, 0.3); }
+.dim-25 { color: rgba(255, 255, 255, 0.25); }
+.dim-20 { color: rgba(255, 255, 255, 0.2); }
+.dim-15 { color: rgba(255, 255, 255, 0.15); }
 
 /* Card style */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 1rem;
+}
+
+/* ─── Animations ─── */
+.animate-blinkCursor {
+  animation: blinkCursor 1.5s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
 }

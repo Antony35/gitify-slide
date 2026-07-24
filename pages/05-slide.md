@@ -6,7 +6,7 @@
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);"
+  <p class="mono text-xs tracking-widest uppercase dim-25"
     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">Les fonctionnalités</p>
 
   <div class="grid grid-cols-3 gap-4" style="width: 720px;">
@@ -16,7 +16,7 @@
     <span class="text-xl mt-0.5">🔑</span>
     <div>
       <p class="font-semibold text-sm text-white">GitHub OAuth</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">Connexion en un clic via GitHub</p>
+      <p class="text-xs mt-1 dim-40">Connexion en un clic via GitHub</p>
     </div>
   </div>
   
@@ -25,7 +25,7 @@
     <span class="text-xl mt-0.5">⚙️</span>
     <div>
       <p class="font-semibold text-sm text-white">Préférences</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">Langages, niveau, type de projets</p>
+      <p class="text-xs mt-1 dim-40">Langages, niveau, type de projets</p>
     </div>
   </div>
   
@@ -34,7 +34,7 @@
     <span class="text-xl mt-0.5">✨</span>
     <div>
       <p class="font-semibold text-sm text-white">Feed personnalisé</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">Projets matchés à ton profil</p>
+      <p class="text-xs mt-1 dim-40">Projets matchés à ton profil</p>
     </div>
   </div>
   
@@ -43,7 +43,7 @@
     <span class="text-xl mt-0.5">🤍</span>
     <div>
       <p class="font-semibold text-sm text-white">Favoris</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">Sauvegarde les projets qui t'intéressent</p>
+      <p class="text-xs mt-1 dim-40">Sauvegarde les projets qui t'intéressent</p>
     </div>
   </div>
   
@@ -52,7 +52,7 @@
     <span class="text-xl mt-0.5">🌐</span>
     <div>
       <p class="font-semibold text-sm text-white">Landing publique</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">Showcase sans compte requis</p>
+      <p class="text-xs mt-1 dim-40">Showcase sans compte requis</p>
     </div>
   </div>
   
@@ -61,7 +61,7 @@
     <span class="text-xl mt-0.5">📄</span>
     <div>
       <p class="font-semibold text-sm text-white">API documentée</p>
-      <p class="text-xs mt-1" style="color: rgba(255,255,255,0.4);">OpenAPI + Scalar UI intégré</p>
+      <p class="text-xs mt-1 dim-40">OpenAPI + Scalar UI intégré</p>
     </div>
   </div>
   

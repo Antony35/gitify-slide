@@ -1,70 +1,73 @@
 <!--
 ╔══════════════════════════════════════════════╗
-║  SLIDE 11 — Bilan & leçons                   ║
+║  SLIDE 12 — Gitify demain                    ║
 ╚══════════════════════════════════════════════╝
 -->
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);" 
+  <p class="mono text-xs tracking-widest uppercase dim-25" 
      v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
-    Bilan & leçons
+    Gitify demain
   </p>
 
-  <!-- On retire l'animation de la grille pour animer les colonnes séparément -->
-  <div class="grid grid-cols-2 gap-4" style="width: 680px;">
+  <!-- On retire l'animation de groupe pour animer les 4 cartes une par une -->
+  <div class="grid grid-cols-2 gap-4" style="width: 640px;">
 
-  <!-- Ce dont on est fiers (Glisse depuis la gauche) -->
-  <div class="flex flex-col gap-3 p-5 rounded-xl" style="background: rgba(166,240,211,0.05); border: 1px solid rgba(166,240,211,0.15);"
-    v-motion="{ initial: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0, transition: { duration: 800, delay: 300 } } }">
-    <p class="mono text-xs font-bold tracking-widest uppercase" style="color: #A6F0D3;">Ce dont on est fiers</p>
-    <ul class="flex flex-col gap-2">
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #A6F0D3; margin-top: 1px;">✓</span> App déployée en production
-        </li>
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #A6F0D3; margin-top: 1px;">✓</span> Type-safety end-to-end (Tuyau)
-        </li>
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #A6F0D3; margin-top: 1px;">✓</span> Infrastructure pro (Cloudflare · CI/CD)
-        </li>
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #A6F0D3; margin-top: 1px;">✓</span> Budget maîtrisé — 42 € total
-        </li>
-    </ul>
+  <!-- Notifications -->
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 300 } } }">
+    <span class="text-xl">🔔</span>
+    <div>
+        <p class="font-semibold text-sm text-white">Notifications</p>
+        <p class="text-xs mt-1 dim-40">Alertes sur les nouvelles issues des projets favoris</p>
+    </div>
   </div>
 
-  <!-- Ce qu'on referait autrement (Glisse depuis la droite) -->
-  <div class="flex flex-col gap-3 p-5 rounded-xl" style="background: rgba(255,35,2,0.04); border: 1px solid rgba(255,35,2,0.15);"
-    v-motion="{ initial: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 800, delay: 500 } } }">
-    <p class="mono text-xs font-bold tracking-widest uppercase" style="color: #FF2302;">Ce qu'on referait</p>
-    <ul class="flex flex-col gap-2">
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-            <span style="color: #FF2302; margin-top: 1px;">→</span> Partir sur les abstractions natives du framework
-        </li>
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #FF2302; margin-top: 1px;">→</span> Définir les conventions Docker dès le départ
-        </li>
-        <li class="flex items-start gap-2 text-xs" style="color: rgba(255,255,255,0.65);">
-          <span style="color: #FF2302; margin-top: 1px;">→</span> Sprint reviews régulières dès le premier mois
-        </li>
-    </ul>
+  <!-- Application mobile -->
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 450 } } }">
+    <span class="text-xl">📱</span>
+    <div>
+        <p class="font-semibold text-sm text-white">Application mobile</p>
+        <p class="text-xs mt-1 dim-40">Swipe natif sur iOS & Android</p>
+    </div>
   </div>
 
+  <!-- Suivi de contribution -->
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 600 } } }">
+    <span class="text-xl">📊</span>
+    <div>
+        <p class="font-semibold text-sm text-white">Suivi de contribution</p>
+        <p class="text-xs mt-1 dim-40">Historique des PRs et issues soumises</p>
+    </div>
   </div>
 
-  <!-- Footer qui remonte à la fin -->
-  <p class="text-xs" style="color: rgba(255,255,255,0.2);" 
-     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 700 } } }">
-    7 mois · v1.0.2 · en production
+  <!-- Mode équipe -->
+  <div class="card flex items-start gap-3 p-4"
+    v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 750 } } }">
+    <span class="text-xl">👥</span>
+    <div>
+        <p class="font-semibold text-sm text-white">Mode équipe</p>
+        <p class="text-xs mt-1 dim-40">Matching de projets pour plusieurs devs</p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Apparition du texte de fin en dernier -->
+  <p class="mono text-xs dim-20" 
+     v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 900 } } }">
+    La base est là. Le potentiel aussi.
   </p>
 
 </div>
 
 <!--
-NOTES ORATEUR — Slide 11
-Le bilan de ces 7 mois est positif.
-Ce dont on est le plus fiers : l'app est en production — ce n'est pas un prototype, c'est un vrai produit accessible. On a construit une architecture type-safe de bout en bout grâce à Tuyau, avec une infrastructure sérieuse côté sécurité et déploiement — Cloudflare, GitHub Actions, Docker. Et tout ça pour 42 euros d'hébergement.
-Ce qu'on referait différemment : éviter de réimplémenter ce que le framework sait déjà faire, poser les conventions d'infra dès le jour un, et formaliser les sprint reviews pour rester synchronisés en équipe.
-Ces leçons, on ne les a pas apprises dans un cours — on les a apprises en les vivant.
+NOTES ORATEUR — Slide 12
+Gitify c'est une v1 — et on sait exactement où elle peut aller.
+Côté utilisateur, les notifications permettraient d'être alerté quand une nouvelle issue s'ouvre sur un projet qu'on a mis en favoris. L'application mobile rendrait l'expérience encore plus naturelle — le swipe est fait pour le tactile.
+Côté produit, un suivi de contribution permettrait de voir l'historique de ses PRs et issues soumises directement depuis Gitify. Et un mode équipe ouvrirait la plateforme à des groupes de développeurs qui cherchent un projet commun.
+La fondation technique qu'on a posée — monorepo, API documentée, architecture modulaire — est conçue pour accueillir ces évolutions.
 -->
