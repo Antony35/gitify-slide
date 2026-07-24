@@ -6,7 +6,7 @@
 
 <div class="flex flex-col items-center justify-center gap-8 h-full">
 
-  <p class="mono text-xs tracking-widest uppercase" style="color: rgba(255,255,255,0.25);" 
+  <p class="mono text-xs tracking-widest uppercase dim-25" 
      v-motion="{ initial: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 800, delay: 100 } } }">
     Ce qu'on a appris
   </p>
@@ -20,7 +20,7 @@
     <span class="text-2xl mt-0.5">🔐</span>
     <div>
       <p class="font-semibold text-sm text-white">Authentification</p>
-      <p class="text-xs mt-1 leading-relaxed" style="color: rgba(255,255,255,0.45);">
+      <p class="text-xs mt-1 leading-relaxed dim-45">
         Implémenter manuellement les tokens HTTP-only, c'est complexe.
         Les sessions natives d'Adonis le font automatiquement — et mieux.
       </p>
@@ -33,9 +33,9 @@
     <span class="text-2xl mt-0.5">🐳</span>
     <div>
       <p class="font-semibold text-sm text-white">Permissions Docker</p>
-      <p class="text-xs mt-1 leading-relaxed" style="color: rgba(255,255,255,0.45);">
+      <p class="text-xs mt-1 leading-relaxed dim-45">
         Problèmes de permissions de fichiers entre le host et les containers.
-        Résolu en définissant <span class="mono" style="color: #A6F0D3;">user: "node"</span> dans chaque service du Compose.
+        Résolu en définissant <span class="mono text-mint">user: "node"</span> dans chaque service du Compose.
       </p>
     </div>
   </div>
@@ -46,7 +46,7 @@
     <span class="text-2xl mt-0.5">🗣️</span>
     <div>
       <p class="font-semibold text-sm text-white">Organisation d'équipe</p>
-      <p class="text-xs mt-1 leading-relaxed" style="color: rgba(255,255,255,0.45);">
+      <p class="text-xs mt-1 leading-relaxed dim-45">
         Plus de communication et des sprint reviews régulières auraient évité
         des désynchronisations sur l'avancement de chacun.
       </p>
