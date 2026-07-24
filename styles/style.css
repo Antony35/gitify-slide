@@ -51,13 +51,3 @@
   border: 1px solid var(--border);
   border-radius: 1rem;
 }
-
-/* ─── Animations ─── */
-.animate-blinkCursor {
-  animation: blinkCursor 1.5s step-end infinite;
-}
-
-@keyframes blinkCursor {
-  0%, 100% { opacity: 1; }
-  50%      { opacity: 0; }
-}

@@ -14,7 +14,7 @@
       &gt;_
     </div>
     <span class="mono font-black text-6xl tracking-tight text-white">
-      Gitify<span class="animate-blinkCursor text-red">_</span>
+      Gitify<span v-motion="{ initial: { opacity: 1 }, enter: { opacity: [1, 1, 0, 0], transition: { duration: 1000, repeat: Infinity, ease: 'linear', times: [0, 0.49, 0.5, 1] } } }" class="text-red">_</span>
     </span>
   </div>
 
